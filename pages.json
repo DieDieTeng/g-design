@@ -1,17 +1,61 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"uniIdRouter": {}
+  "easycom": {
+    "autoscan": true
+  },
+  "pages": [
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationStyle": "custom",
+        "onReachBottomDistance": 50
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/my/edit",
+      "style": {
+        "navigationBarTitleText": "我的房源",
+        "onReachBottomDistance": 50
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/ic_home_normal.png",
+        "selectedIconPath": "static/ic_home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/ic_me_normal.png",
+        "selectedIconPath": "static/ic_me_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "maxWidth": 450,
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "G-Design",
+    "navigationStyle": "uniapp",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }
